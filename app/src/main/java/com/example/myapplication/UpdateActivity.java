@@ -14,7 +14,7 @@ public class UpdateActivity extends AppCompatActivity {
     EditText name, num;
     Button update, delete;
 
-    // creatoing string variable for having data of the intent from the main activity
+    // creating string variable for having data of the intent from the main activity
 
     String intentId, intentName, intentNumber;
     @Override

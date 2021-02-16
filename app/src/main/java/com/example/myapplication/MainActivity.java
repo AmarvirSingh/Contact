@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         displayData();
 
-        total.setText("Total contacts "+srnum.size());
+        total.setText("Total Notes "+srnum.size());
         rv.setLayoutManager(new LinearLayoutManager(MainActivity.this));
     }
 

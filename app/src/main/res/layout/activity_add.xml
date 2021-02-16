@@ -8,26 +8,30 @@
 
     <EditText
         android:id="@+id/contact_name"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
-        android:hint="Enter Name"
+        android:hint="Title"
         android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/conatctNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_width="402dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Enter Contact Number"
-        android:inputType="number"
+        android:gravity="top|left"
+        android:hint="Enter note description"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contact_name" />
 
@@ -35,9 +39,11 @@
         android:id="@+id/add_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="Add Contact"
+        android:layout_marginTop="136dp"
+        android:text="Add Note"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/conatctNumber" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

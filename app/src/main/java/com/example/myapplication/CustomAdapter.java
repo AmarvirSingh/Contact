@@ -40,6 +40,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     @Override
     public void onBindViewHolder(@NonNull CustomAdapter.MyViewHolder holder, int position) {
+        holder.srTextView.setText(String.valueOf(srnum.get(position)));
         holder.naem.setText(String.valueOf(name.get(position)));
         holder.number.setText(String.valueOf(number.get(position)));
 
@@ -61,12 +62,13 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView naem , number;
+        TextView naem , number, srTextView;
         LinearLayout linearLayout;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
         naem = itemView.findViewById(R.id.textView);
         number = itemView.findViewById(R.id.textView2);
+        srTextView = itemView.findViewById(R.id.srtextView);
         linearLayout = itemView.findViewById(R.id.row_Linear);
 
         }
